@@ -1,18 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Login page</title>
+<meta charset="UTF-8">
+<title>SPMP| login</title>
 </head>
 <body>
-	<form >
-	<h1>User Login</h1>
-		User Name <input type="text" name="username"><br>
-		Password <input type="password" name="password"> <br>
-		
-		<input type="submit" value="login">
-	</form>
+<h2>User Login</h2>
+    <form action="authenticate.jsp" method="POST">
+        <p>Username: <input type="text" name="nama" required/></p>
+        <p>Password: <input type="password" name="katalaluan" required/></p>
+        <p><input type="submit" value="Login"/></p>
+    </form>
 </body>
 </html>
