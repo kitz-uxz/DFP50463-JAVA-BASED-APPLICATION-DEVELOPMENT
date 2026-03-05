@@ -16,8 +16,7 @@ String error =request.getParameter("error");
     <p style="color:red;">Invalid Username or Password</p>
 <% } %>
 <form action="login_process.jsp" method="post">
-        <p>Username: <input type="text" name="username" style="text-transform: uppercase;" />
-</p>
+        <p>Username: <input type="text" name="username" required/></p>
         <p>Password: <input type="password" name="password" required/></p>
         <p><input type="submit" value="Login"/></p>
     </form>
